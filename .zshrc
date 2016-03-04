@@ -50,7 +50,7 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew brew-cask ruby mvn vagrant history-substring-search packer aws gem)
+plugins=(git brew brew-cask ruby mvn vagrant history-substring-search packer aws gem pip)
 
 # User configuration
 export M3_HOME=/usr/local/Cellar/maven31/3.1.1
