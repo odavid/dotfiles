@@ -9,6 +9,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -29,6 +30,15 @@ filetype plugin indent on    " required
 " vim-airline configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:airline#extensions#tabline#enabled = 1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" nerdtree configuration
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" map <C-n> :NERDTreeToggle<CR>
+" autocmd vimenter * NERDTree
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
