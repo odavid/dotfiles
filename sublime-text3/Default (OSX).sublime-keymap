@@ -1,3 +1,17 @@
 [
 	{"keys": ["ctrl+super+r"], "command": "reveal_in_side_bar"}
+
+// Replace panel key bindings
+	// { "keys": ["enter"], "command": "find_next", "context":
+	// 	[{"key": "panel", "operand": "replace"}, {"key": "panel_has_focus"}]
+	// },
+	// { "keys": ["shift+enter"], "command": "find_prev", "context":
+	// 	[{"key": "panel", "operand": "replace"}, {"key": "panel_has_focus"}]
+	// },
+	// { "keys": ["alt+enter"], "command": "find_all", "args": {"close_panel": true},
+	// 	"context": [{"key": "panel", "operand": "replace"}, {"key": "panel_has_focus"}]
+	// },
+	{ "keys": ["super+shift+enter"], "command": "replace_all", "args": {"close_panel": true},
+		 "context": [{"key": "panel", "operand": "replace"}, {"key": "panel_has_focus"}]
+	}
 ]
