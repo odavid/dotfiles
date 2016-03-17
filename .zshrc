@@ -6,7 +6,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="robbyrussell"
-ZSH_THEME="ys"
+ZSH_THEME="amuse"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -50,7 +50,8 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew brew-cask ruby mvn vagrant history-substring-search packer aws gem pip docker)
+plugins=(git brew brew-cask ruby mvn vagrant history-substring-search packer aws gem pip docker zsh-completions docker-machine ansible-playbook ansible ansible-galaxy)
+autoload -U compinit && compinit
 
 # User configuration
 export M3_HOME=/usr/local/Cellar/maven31/3.1.1
@@ -59,6 +60,9 @@ export JAVA_HOME=$(/usr/libexec/java_home -v 1.6)
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH=$M3_HOME/bin:$JAVA_HOME/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
+
+#docker
+eval $(docker-machine env default)
 
 source $ZSH/oh-my-zsh.sh
 
